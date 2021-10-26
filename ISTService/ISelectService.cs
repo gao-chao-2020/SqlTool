@@ -9,9 +9,17 @@ namespace ISTService
 {
     public interface ISelectService
     {
-        DataTable SelectTable();
-        int InsertTable();
-        int DeleteTable();
-        int UpdateTable();
+
+       DataTable SelectTable(string[] arr);
+
+
+       int InsertTable(string[] arr);
+
+
+       int DeleteTable(string[] arr);
+
+
+       int UpdateTable(string[] arr);
+        
     }
 }

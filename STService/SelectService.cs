@@ -5,10 +5,11 @@ using System.Data;
 
 namespace STService
 {
-    public class SelectService
+    public class SelectService : ISelectService
     {
 
-        public static IFreeSql fsql { get; set; }
+        public IFreeSql fsql { get; set; }
+
         public SelectService(IFreeSql _fsql)
         {
             fsql = _fsql;
@@ -35,7 +36,7 @@ namespace STService
                 else
                 {
                     w = string.Join(" ", arr);
-                    w = w.Substring(arr[0].Length + arr[2].Length, w.Length - 1);
+                    w = w.Substring(arr[0].Length + arr[1].Length + 1);
                 }
             }
             else
