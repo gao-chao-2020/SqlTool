@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STConsole", "STConsole\STConsole.csproj", "{A9EFF8D5-1934-46DD-B9D4-1F5B288947A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STService", "STService\STService.csproj", "{B5387C78-B179-43E9-A044-3FE37B6F26E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTService", "ISTService\ISTService.csproj", "{2221D810-ECBB-4E91-AA2F-93D7787905D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9EFF8D5-1934-46DD-B9D4-1F5B288947A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9EFF8D5-1934-46DD-B9D4-1F5B288947A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9EFF8D5-1934-46DD-B9D4-1F5B288947A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9EFF8D5-1934-46DD-B9D4-1F5B288947A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5387C78-B179-43E9-A044-3FE37B6F26E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5387C78-B179-43E9-A044-3FE37B6F26E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5387C78-B179-43E9-A044-3FE37B6F26E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5387C78-B179-43E9-A044-3FE37B6F26E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2221D810-ECBB-4E91-AA2F-93D7787905D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2221D810-ECBB-4E91-AA2F-93D7787905D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2221D810-ECBB-4E91-AA2F-93D7787905D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2221D810-ECBB-4E91-AA2F-93D7787905D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34289337-03E5-40F5-AB96-409E25036780}
+	EndGlobalSection
+EndGlobal
