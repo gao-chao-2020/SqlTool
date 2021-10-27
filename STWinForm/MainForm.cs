@@ -60,6 +60,7 @@ namespace STWinForm
 
         private void cmb_ConnList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            FsqlCommon.FsqlBuilder(cmb_ConnList.Text);
             BindTables(cmb_ConnList.SelectedIndex);
         }
     }

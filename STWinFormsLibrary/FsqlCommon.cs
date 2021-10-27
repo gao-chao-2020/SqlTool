@@ -14,7 +14,7 @@ namespace STWinFormsLibrary
         public static List<DataBase> Databases;
         public static void FsqlBuilder(string connName)
         {
-            string connStr = FsqlCommon.Conns[connName].ToString();
+            var connStr = "Data Source=.;User Id=sa;Password=123;Initial Catalog=" + connName + ";Pooling=true;Min Pool Size=1;";
             Fsql = new FreeSql.FreeSqlBuilder()
             .UseConnectionString(FreeSql.DataType.SqlServer, connStr)
             .Build();
