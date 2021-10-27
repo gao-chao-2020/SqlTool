@@ -30,6 +30,7 @@ namespace STConsole
             int cmdsHisI = 0;
             while (true)
             {
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 var r = Console.ReadKey(true);
                 //if (r.KeyChar == '\b' && cmd.Length == 0)
                 //{
@@ -175,8 +176,19 @@ namespace STConsole
                         cmdsHis.Add(cmd);
                         cmdsHisI = cmdsHis.Count;
                         Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
                         Console.WriteLine("Running...");
-                        RunCMD(cmd);
+                        try
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkGray;
+                            RunCMD(cmd);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                            Console.WriteLine(ex.Message);
+                        }
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
                         Console.WriteLine("End");
                         cmd = "";
                         break;
@@ -292,6 +304,7 @@ namespace STConsole
                     Console.WriteLine(t7);
                     break;
                 default:
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("无效命令");
                     break;
             }

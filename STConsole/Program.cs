@@ -11,6 +11,7 @@ namespace STConsole
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine("Hello World!");
             CmdMain.GetCMDInfo();
         }
