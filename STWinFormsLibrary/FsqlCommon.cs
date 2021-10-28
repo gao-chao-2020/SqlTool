@@ -10,11 +10,12 @@ namespace STWinFormsLibrary
 {
     public static class FsqlCommon
     {
+        public static string TableName;
         public static IFreeSql Fsql;
         public static List<DataBase> Databases;
         public static void FsqlBuilder(string connName)
         {
-            var connStr = "Data Source=.;User Id=sa;Password=123;Initial Catalog=" + connName + ";Pooling=true;Min Pool Size=1;";
+            var connStr = Conns[1].ToString().Replace("{dbname}", connName);
             Fsql = new FreeSql.FreeSqlBuilder()
             .UseConnectionString(FreeSql.DataType.SqlServer, connStr)
             .Build();
